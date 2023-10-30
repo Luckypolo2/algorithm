@@ -6,7 +6,7 @@
 
 // 哈希
 function twoNumAdd(arr, target) {
-  // 首先判断是否为数组
+  // 首先判断是否为数组，如果是数组则进行后续操作，否则返回空数组
   if (Array.isArray(arr)) {
     const map = new Map()
     for (let i=0; i<arr.length;i++) {
@@ -20,6 +20,7 @@ function twoNumAdd(arr, target) {
   return []
 }
 
+// 暴力
 function twoNumAdd2(arr, target) {
   if (Array.isArray(arr)) {
     for (let i=0; i<arr.length;i++) {
